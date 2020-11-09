@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Slab&family=Peddana&family=Vidaloka&family=Zilla+Slab:ital,wght@1,300&display=swap");
+$colorA: #1e4e59;
+$colorB: #618c8c;
+$colorC: #bfd9d6;
+
+$color-2-A: #402820;
+$color-2-B: #593e34;
+$color-2-C: #8c6c61;
+
+$color-3-A: #035159;
+$color-3-B: #013440;
+$color-3-C: #96b3d9;
+
+$color-4-A: #f29f05;
+$color-4-B: #bf925a;
+$color-4-C: #0d0d0d;
+
+$color-5-A: #d9c1d7;
+$color-5-B: #815a8c;
+$color-5-C: #b79bbf;
+
+#wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition-property: all;
+  transition-duration: 0.7s;
+  transition-timing-function: cubic-bezier(1, 0.05, 1, 1);
+  padding-bottom: 50px;
+  &.scheme-1 {
+    background-color: $colorA;
+  }
+  &.scheme-2 {
+    background-color: $color-2-A;
+  }
+  &.scheme-3 {
+    background-color: $color-3-A;
+  }
+  &.scheme-4 {
+    background-color: $color-4-A;
+  }
+  &.scheme-5 {
+    background-color: $color-5-A;
+  }
+}
+
+#quote-box {
+  width: 600px;
+  padding: 30px 60px;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 0.6s;
+  transition-timing-function: cubic-bezier(0.58, -0.86, 0.34, 1.89);
+  &.scheme-1 {
+    background-color: $colorB;
+    color: $colorC;
+    font-family: "Cinzel", serif;
+    font-size: 1.5em;
+  }
+  &.scheme-2 {
+    background-color: $color-2-B;
+    color: $color-2-C;
+    font-family: "Josefin Slab", serif;
+    font-size: 2.1em;
+  }
+  &.scheme-3 {
+    background-color: $color-3-B;
+    color: $color-3-C;
+    font-family: "Peddana", serif;
+    font-size: 2.4em;
+  }
+  &.scheme-4 {
+    background-color: $color-4-B;
+    color: $color-4-C;
+    font-family: "Vidaloka", serif;
+    font-size: 1.6em;
+  }
+  &.scheme-5 {
+    background-color: $color-5-B;
+    color: $color-5-C;
+    font-family: "Zilla Slab", serif;
+    font-size: 2em;
+  }
+}
+
+#author-box {
+  align-self: flex-end;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+#control-panel {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.control button {
+  border: none;
+  border-radius: 3px;
+  padding: 3px 9px 3px 9px;
+  margin-right: 10px;
+  font-family: serif;
+  font-size: 20px;
+
+  &.scheme-1 {
+    background-color: $colorC;
+    color: $colorA;
+  }
+  &.scheme-2 {
+    background-color: $color-2-C;
+    color: $color-2-A;
+  }
+  &.scheme-3 {
+    background-color: $color-3-C;
+    color: $color-3-A;
+  }
+  &.scheme-4 {
+    background-color: $color-4-C;
+    color: $color-4-A;
+  }
+  &.scheme-5 {
+    background-color: $color-5-C;
+    color: $color-5-A;
+  }
+  a {
+    color: inherit;
+  }
+  i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  #quote-box {
+    width: 90vw;
+    padding: 15px 30px;
+    &.scheme-1 {
+      font-size: 1.3em;
+    }
+    &.scheme-2 {
+      font-size: 1.5em;
+    }
+    &.scheme-3 {
+      font-size: 2em;
+    }
+    &.scheme-4 {
+      font-size: 1.2em;
+    }
+    &.scheme-5 {
+      font-size: 1.6em;
+    }
+  }
+
+  .control button {
+    margin-right: 12px;
+    font-size: 25px;
+    i {
+      font-size: 25px;
+    }
+  }
+}
