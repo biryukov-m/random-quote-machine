@@ -27,7 +27,7 @@ $color-5-C: #b79bbf;
   flex-direction: column;
   justify-content: center;
   transition-property: all;
-  transition-duration: 0.7s;
+  transition-duration: 1s;
   transition-timing-function: cubic-bezier(1, 0.05, 1, 1);
   padding-bottom: 50px;
   &.scheme-1 {
@@ -49,7 +49,7 @@ $color-5-C: #b79bbf;
 
 #quote-box {
   width: 600px;
-  padding: 30px 60px;
+  padding: 20px 35px;
   border-radius: 10px;
   margin: 0 auto;
   display: flex;
@@ -57,37 +57,38 @@ $color-5-C: #b79bbf;
   justify-content: center;
   align-items: center;
   transition-property: all;
-  transition-duration: 0.6s;
+  transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.58, -0.86, 0.34, 1.89);
   &.scheme-1 {
     background-color: $colorB;
     color: $colorC;
     font-family: "Cinzel", serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   &.scheme-2 {
     background-color: $color-2-B;
     color: $color-2-C;
     font-family: "Josefin Slab", serif;
-    font-size: 2.1em;
+    font-size: 1.7em;
   }
   &.scheme-3 {
     background-color: $color-3-B;
     color: $color-3-C;
     font-family: "Peddana", serif;
-    font-size: 2.4em;
+    font-size: 1.9em;
+    line-height: 1.1em;
   }
   &.scheme-4 {
     background-color: $color-4-B;
     color: $color-4-C;
     font-family: "Vidaloka", serif;
-    font-size: 1.6em;
+    font-size: 1.2em;
   }
   &.scheme-5 {
     background-color: $color-5-B;
     color: $color-5-C;
     font-family: "Zilla Slab", serif;
-    font-size: 2em;
+    font-size: 1.6em;
   }
 }
 
@@ -108,10 +109,12 @@ $color-5-C: #b79bbf;
 .control button {
   border: none;
   border-radius: 3px;
-  padding: 3px 9px 3px 9px;
+  // padding: 0 9px;
+  width: 33px;
+  height: 33px;
   margin-right: 10px;
   font-family: serif;
-  font-size: 20px;
+  font-size: 15px;
 
   &.scheme-1 {
     background-color: $colorC;
@@ -137,7 +140,7 @@ $color-5-C: #b79bbf;
     color: inherit;
   }
   i {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -146,27 +149,27 @@ $color-5-C: #b79bbf;
     width: 90vw;
     padding: 15px 30px;
     &.scheme-1 {
-      font-size: 1.3em;
+      font-size: 1em;
     }
     &.scheme-2 {
-      font-size: 1.5em;
+      font-size: 1.4em;
     }
     &.scheme-3 {
-      font-size: 2em;
+      font-size: 1.5em;
     }
     &.scheme-4 {
-      font-size: 1.2em;
+      font-size: 1em;
     }
     &.scheme-5 {
-      font-size: 1.6em;
+      font-size: 1.2em;
     }
   }
 
   .control button {
     margin-right: 12px;
-    font-size: 25px;
+    // font-size: 25px;
     i {
-      font-size: 25px;
+      // font-size: 25px;
     }
   }
 }

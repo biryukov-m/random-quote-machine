@@ -108,9 +108,8 @@ class App extends React.Component {
                 <a  href="twitter.com/intent/tweet" className={this.state.scheme}>
                   <i className="fab fa-twitter"></i>
                 </a>
-                <a id="tweet-quote" className={this.state.scheme + 'twitter-share-button'}
-                  href={"https://twitter.com/intent/tweet?text=" + this.state.quote}>
-                  Tweet</a>
+                <a id="tweet-quote" className={this.state.scheme + ' twitter-share-button'}
+                  href={"https://twitter.com/intent/tweet?text=" + this.state.quote}></a>
               </button>
             </div>
           </div>
